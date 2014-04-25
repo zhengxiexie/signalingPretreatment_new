@@ -5,7 +5,7 @@ INCLUDE = -I ../include
 LIBS    = -lpthread
 OBJECTS = sspublic.o sspretreatment.o sscheck.o sstrans.o ssmsisdn.o
 LDFLAGS = -O2 -m64 $(LIBS) -lm
-CFLAGS  = -O2 -m64 -D_REENTRANT $(DEBUG) $(INCLUDE)
+CFLAGS  = -O2 -m64 -g -D_REENTRANT $(DEBUG) $(INCLUDE)
 
 all::  saPretreatment
 	rm -f ../bin/saPretreatment
